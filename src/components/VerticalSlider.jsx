@@ -1,11 +1,11 @@
 import React from "react";
 import "./VerticalSlider.css";
 import styled, { keyframes } from "styled-components";
-import sliderpic1 from "../assets/sliderpic1.svg";
-import sliderpic2 from "../assets/sliderpic2.svg";
-import sliderpic3 from "../assets/sliderpic3.svg";
-import sliderpic4 from "../assets/sliderpic4.svg";
-import sliderpic5 from "../assets/sliderpic5.svg";
+import sliderpic1 from "../../src/assets/sliderpic1.svg";
+import sliderpic2 from "../../src/assets/sliderpic2.svg";
+import sliderpic3 from "../../src/assets/sliderpic3.svg";
+import sliderpic4 from "../../src/assets/sliderpic4.svg";
+import sliderpic5 from "../../src/assets/sliderpic5.svg";
 
 const slide = keyframes`
   0% { transform: translateY(0); }

@@ -1,8 +1,8 @@
 import React from "react";
 import "./About.css";
 
-import yellowbox from "../assets/yellowimage.svg";
-import column from "../assets/column.svg";
+import yellowbox from "../../assets/yellowimage.svg";
+import column from "../../assets/column.svg";
 import VerticalSlider from "../VerticalSlider";
 
 const About = () => {

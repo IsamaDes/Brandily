@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Modal from "./Modal";
-import styleplus from "../assets/Styleplus.svg";
-import sectionbutton from "../assets/sectionsbuttonimg.svg";
+import styleplus from "../../assets/Styleplus.svg";
+import sectionbutton from "../../assets/sectionsbuttonimg.svg";
 import { Link } from "react-router-dom";
 
 import "./NavBar.css";

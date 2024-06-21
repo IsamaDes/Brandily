@@ -2,17 +2,15 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import crackedimg from "../../assets/CrackedImg.svg";
 import arrow from "../../assets/leftfacearrow.svg";
-
-import arrow from "../assets/leftfacearrow.svg";
-import column from "../assets/column.svg";
-import nimg from "../assets/nimage.svg";
-import circleangle from "../assets/circleangle.svg";
-import rectangleimg from "../assets/rectanglebox.svg";
-import phoneimg from "../assets/phoneimg.svg";
-import yellowbox from "../assets/yellowimage.svg";
-import bigarrow from "../assets/bigarrow.svg";
-import circlearrow from "../assets/circlearrow.svg";
-import buttonarrow from "../assets/buttonarrow.svg";
+import column from "../../assets/column.svg";
+import nimg from "../../assets/nimage.svg";
+import circleangle from "../../assets/circleangle.svg";
+import rectangleimg from "../../assets/rectanglebox.svg";
+import phoneimg from "../../assets/phoneimg.svg";
+import yellowbox from "../../assets/yellowimage.svg";
+import bigarrow from "../../assets/bigarrow.svg";
+import circlearrow from "../../assets/circlearrow.svg";
+import buttonarrow from "../../assets/buttonarrow.svg";
 
 import React from "react";
 import VerticalSlider from "../VerticalSlider";
