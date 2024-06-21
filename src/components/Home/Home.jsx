@@ -42,7 +42,7 @@ const Home = () => {
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    backgroundColor: " #353342",
+    backgroundColor: "#353342",
     background: `url(${backgroundImg})`,
   };
 
