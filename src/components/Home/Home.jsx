@@ -1,16 +1,18 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
-import crackedimg from "/Users/mac/Downloads/Brandily/Brandily/src/assets/CrackedImg.svg";
-import arrow from "/Users/mac/Downloads/Brandily/Brandily/src/assets/leftfacearrow.svg";
-import column from "/Users/mac/Downloads/Brandily/Brandily/src/assets/column.svg";
-import nimg from "/Users/mac/Downloads/Brandily/Brandily/src/assets/nimage.svg";
-import circleangle from "/Users/mac/Downloads/Brandily/Brandily/src/assets/circleangle.svg";
-import rectangleimg from "/Users/mac/Downloads/Brandily/Brandily/src/assets/rectanglebox.svg";
-import phoneimg from "/Users/mac/Downloads/Brandily/Brandily/src/assets/phoneimg.svg";
-import yellowbox from "/Users/mac/Downloads/Brandily/Brandily/src/assets/yellowimage.svg";
-import bigarrow from "/Users/mac/Downloads/Brandily/Brandily/src/assets/bigarrow.svg";
-import circlearrow from "/Users/mac/Downloads/Brandily/Brandily/src/assets/circlearrow.svg";
-import buttonarrow from "/Users/mac/Downloads/Brandily/Brandily/src/assets/buttonarrow.svg";
+import crackedimg from "../../assets/CrackedImg.svg";
+import arrow from "../../assets/leftfacearrow.svg";
+
+import arrow from "../assets/leftfacearrow.svg";
+import column from "../assets/column.svg";
+import nimg from "../assets/nimage.svg";
+import circleangle from "../assets/circleangle.svg";
+import rectangleimg from "../assets/rectanglebox.svg";
+import phoneimg from "../assets/phoneimg.svg";
+import yellowbox from "../assets/yellowimage.svg";
+import bigarrow from "../assets/bigarrow.svg";
+import circlearrow from "../assets/circlearrow.svg";
+import buttonarrow from "../assets/buttonarrow.svg";
 
 import React from "react";
 import VerticalSlider from "../VerticalSlider";

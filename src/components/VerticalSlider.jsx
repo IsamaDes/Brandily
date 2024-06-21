@@ -1,12 +1,11 @@
 import React from "react";
 import "./VerticalSlider.css";
 import styled, { keyframes } from "styled-components";
-import sliderpic1 from "/Users/mac/Downloads/Brandily/Brandily/src/assets/sliderpic1.svg";
-import sliderpic2 from "/Users/mac/Downloads/Brandily/Brandily/src/assets/sliderpic2.svg";
-import sliderpic3 from "/Users/mac/Downloads/Brandily/Brandily/src/assets/sliderpic3.svg";
-import sliderpic4 from "/Users/mac/Downloads/Brandily/Brandily/src/assets/sliderpic4.svg";
-import sliderpic5 from "/Users/mac/Downloads/Brandily/Brandily/src/assets/sliderpic5.svg";
-import yellowbox from "/Users/mac/Downloads/Brandily/Brandily/src/assets/yellowimage.svg";
+import sliderpic1 from "../assets/sliderpic1.svg";
+import sliderpic2 from "../assets/sliderpic2.svg";
+import sliderpic3 from "../assets/sliderpic3.svg";
+import sliderpic4 from "../assets/sliderpic4.svg";
+import sliderpic5 from "../assets/sliderpic5.svg";
 
 const slide = keyframes`
   0% { transform: translateY(0); }

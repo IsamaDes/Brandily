@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import cancelbutton from "/Users/mac/Downloads/Brandily/Brandily/src/assets/cancelbutton.svg";
-import styleplus from "/Users/mac/Downloads/Brandily/Brandily/src/assets/Styleplus.svg";
+import cancelbutton from "../assets/cancelbutton.svg";
+import styleplus from "../assets/Styleplus.svg";
 import { Link } from "react-router-dom";
 
 import "./Modal.css";
