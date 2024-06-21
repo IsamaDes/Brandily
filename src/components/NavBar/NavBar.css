@@ -1,0 +1,124 @@
+
+
+.innerheader {
+  position: fixed;
+  top: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  height: 120px;
+}
+
+.style {
+  width: 20%;
+}
+
+.styleplus {
+  height: auto; 
+}
+
+.startsection {
+  display: flex;
+  flex-direction: row;
+  gap:2px;
+  justify-content: center; 
+}
+
+.sectionsstart {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -20px;
+  gap: 20px;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.button {
+  padding: 7px 14px; 
+  border-radius: 4px;
+  color: #fef6e4;
+  background-color: transparent;
+  border: 1px solid transparent; 
+  transition: background-color 0.3s ease; 
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.start {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.startbutton {
+  background-color: #fef6e4;
+  padding: 12px 24px; 
+  border-radius: 24px; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.startbutton:hover {
+  background-color: #e5e5e5; 
+}
+
+
+@media screen and (max-width: 600px) {
+  .innerheader {
+    width: 100%;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sectionsstart{
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 601px) {
+  .innerheader {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+.sectionsstart{
+  display: block;
+}
+
+.sectionsstart{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  height: 40px;
+}
+
+  .style {
+    width: 30%; 
+  }
+
+  .startsection{
+    display: none;
+  }
+
+  
+  .startbutton {
+    width: 100%; 
+  }
+}

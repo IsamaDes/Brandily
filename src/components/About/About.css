@@ -1,0 +1,127 @@
+
+.aboutbody{
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FEF6E4;
+    background-image: url("../assets/backgroundImg.svg"); 
+}
+
+.aboutin{
+    background-image: url("../assets/backgroundImg.svg");
+    width:85%;
+    height: 890px;
+    align-self: center;
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.styleabout{
+    align-self: center;
+    text-align: center;
+}
+.aboutimageslider{
+    background-color: #FEF6E4;
+     width: 30%; 
+     height: 320px; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutinnerimageslider{
+     width: 90%; 
+    height: 300px;
+    margin-top: 20px;
+    z-index: 1; 
+}
+
+
+.aboutyellowbox{
+    z-index: 0;
+    right: 0;
+    top:0;
+    position:absolute;
+}
+
+
+.aboutsparkspark{
+    background-color: #FEF6E4;
+    width: 50%;
+    text-align: center;
+    align-self: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    size: 16px;
+}
+
+.aboutsparkdesription{
+    background-color: #FEF6E4;
+    height: 250px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-self: center;
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 600px){
+
+    .aboutbody{
+        margin-top: 120px;
+    }
+
+    .aboutin{
+        background-image: url("/Users/mac/Downloads/Brandily/Brandily/src/assets/backgroundImg.svg");
+        width:90%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        background-color: #FEF6E4;
+        margin-top: 0px;
+    }
+
+    .aboutimageslider{
+         width: 80%; 
+         height: 320px; 
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutsparkdesription{
+        background-color: #FEF6E4;
+        height: 250px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        align-self: center;
+    }
+
+    .aboutsparkspark{
+        width:80%;
+    }
+}
+
+    @media screen and (min-width: 601px){
+        .aboutbody{
+            margin-top: -60px;
+            height: 1400px;
+        }
+
+        .aboutin{
+            height: 99%;
+            margin-top: -80px;
+        }    
+}

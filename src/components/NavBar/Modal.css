@@ -1,0 +1,9 @@
+
+.stylepluscancel{
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
