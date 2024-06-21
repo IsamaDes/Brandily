@@ -42,8 +42,8 @@ const Home = () => {
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    backgroundColor: "#353342",
-    background: `url(${backgroundImg})`,
+    backgroundColor: "var(--midnight-slate)",
+    backgroundImage: `url(${backgroundImg})`,
   };
 
   return (
