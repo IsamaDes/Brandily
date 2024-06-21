@@ -11,18 +11,47 @@ import yellowbox from "../../assets/yellowimage.svg";
 import bigarrow from "../../assets/bigarrow.svg";
 import circlearrow from "../../assets/circlearrow.svg";
 import buttonarrow from "../../assets/buttonarrow.svg";
+import zigzagimg from "../../assets/zigzagImg.svg";
+import backgroundImg from "../../assets/backgroundImg.svg";
 
 import React from "react";
 import VerticalSlider from "../VerticalSlider";
 
 const Home = () => {
+  const Zigzag = {
+    height: "550px",
+    width: "100%",
+    marginTop: "90px",
+    background: `linear-gradient(to top, #FEF6E4 60%, transparent 60%), url(${zigzagimg})`,
+    backgroundSize: "cover",
+    position: "relative",
+    overflow: "hidden",
+    backgroundPosition: "center",
+  };
+
+  const smallerScreens = {
+    backgroundSize: "contain",
+  };
+
+  const largerScreens = {
+    backgroundSize: "cover",
+  };
+
+  const Partnersupportcrackzigzag = {
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    backgroundColor: " #353342",
+    background: `url(${backgroundImg})`,
+  };
+
   return (
     <div className="homebody">
-      <div className="partnersupportcrackzigzag">
+      <div style={Partnersupportcrackzigzag}>
         <div className="partner">
           Partner for every <span className="market">marketing</span> activities
         </div>
-
         <div className="cracked">
           <img className="crackedimg" src={crackedimg} />
         </div>
@@ -40,15 +69,14 @@ const Home = () => {
             </span>
           </div>
         </div>
-
-        <div className="zigzag"></div>
+        <div style={Zigzag} />{" "}
       </div>
 
       <div className="bottom">
         <div className="aboutus">
           <div className="imageslider">
             <div className="innerimageslider">
-              <VerticalSlider className="verticalimg" />
+              <VerticalSlider />
             </div>
             <div className="yellowbox">
               <img className="yellowboximg" src={yellowbox} />

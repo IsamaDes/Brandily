@@ -14,14 +14,7 @@
 } 
 
 
-.partnersupportcrackzigzag{ 
-  width: 100%;
-  display: flex; 
-  flex-direction: column; 
-  justify-content: space-between;
-  background-color: #353342;
-background-image: url("/Users/mac/Downloads/Brandily/Brandily/src/assets/backgroundImg.svg");
-}
+
 
 
 
@@ -95,20 +88,8 @@ display: none;
 }
 
 
-.zigzag{  
-  height: 550px; 
-  width: 100%;
-  margin-top:  90px;
 
-background: linear-gradient(to top, #FEF6E4 60%, transparent 60%), url("/Users/mac/Downloads/Brandily/Brandily/src/assets/zigzagImg (3).svg");
-background-size: cover;
-position: relative;
-overflow: hidden; /* Ensures the gradient doesn't overflow the element */
-background-size: cover;
-  background-position: center;
-}
-
-.zigzag::before {
+/* .zigzag::before {
   content: '';
   position: absolute;
   top: 0;
@@ -116,7 +97,7 @@ background-size: cover;
   width: 100%;
   height: 100%;
   background: linear-gradient(to top, #FEF6E4 60%, transparent 60%);
-}
+} */
 
 .bottom{
   background-color: #FEF6E4;
