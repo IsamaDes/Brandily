@@ -1,4 +1,5 @@
 import "./Home.css";
+import React from "react";
 import { Link } from "react-router-dom";
 import crackedimg from "../../assets/CrackedImg.svg";
 import arrow from "../../assets/leftfacearrow.svg";
@@ -13,12 +14,11 @@ import circlearrow from "../../assets/circlearrow.svg";
 import buttonarrow from "../../assets/buttonarrow.svg";
 import zigzagimg from "../../assets/zigzagImg.svg";
 import backgroundImg from "../../assets/backgroundImg.svg";
-
-import React from "react";
 import VerticalSlider from "../VerticalSlider";
 
-const Home = () => {
-  const Zigzag = {
+const Home: React.FC = () => {
+
+  const Zigzag: React.CSSProperties = {
     height: "550px",
     width: "100%",
     marginTop: "90px",
@@ -29,15 +29,7 @@ const Home = () => {
     backgroundPosition: "center",
   };
 
-  const smallerScreens = {
-    backgroundSize: "contain",
-  };
-
-  const largerScreens = {
-    backgroundSize: "cover",
-  };
-
-  const Partnersupportcrackzigzag = {
+  const Partnersupportcrackzigzag: React.CSSProperties = {
     width: "100%",
     display: "flex",
     flexDirection: "column",
@@ -53,23 +45,23 @@ const Home = () => {
           Partner for every <span className="market">marketing</span> activities
         </div>
         <div className="cracked">
-          <img className="crackedimg" src={crackedimg} />
+          <img className="crackedimg" src={crackedimg} alt="Cracked Image" />
         </div>
         <div className="supportandarrow">
           <div className="arrow">
-            <img className="bigarrow" src={bigarrow} />
+            <img className="bigarrow" src={bigarrow} alt="Big Arrow" />
           </div>
           <div className="arrow2">
-            <img className="smallarrow" src={arrow} />
+            <img className="smallarrow" src={arrow} alt="Small Arrow" />
           </div>
           <div className="supportspan">
             <span className="support">
               We can support you with content marketing, employer branding, web
-              development, performance marketing or social media marketing
+              development, performance marketing, or social media marketing.
             </span>
           </div>
         </div>
-        <div style={Zigzag} />{" "}
+        <div style={Zigzag} />
       </div>
 
       <div className="bottom">
@@ -79,20 +71,19 @@ const Home = () => {
               <VerticalSlider />
             </div>
             <div className="yellowbox">
-              <img className="yellowboximg" src={yellowbox} />
+              <img className="yellowboximg" src={yellowbox} alt="Yellow Box" />
             </div>
           </div>
-          <div className="desription">
+          <div className="description">
             <div className="aboutspark">
               <div className="about">ABOUT US</div>
               <div className="sparkinnovation">
                 <div className="columnspark">
                   <div className="sparkcolumn">
-                    <img className="sparkcolumnimg" src={column} />
+                    <img className="sparkcolumnimg" src={column} alt="Column" />
                   </div>
                   <div className="spark">Spark innovation, fuel growth</div>
                 </div>
-
                 <div className="atstyleplus">
                   At Styleplus, we're passionate about harnessing the power of
                   technology to drive innovation and growth. As a leading tech
@@ -109,7 +100,11 @@ const Home = () => {
               <div className="sparkbuttondiv">
                 <button className="sparkbutton"> Read more</button>
                 <button className="longerbutton">
-                  <img className="buttonarrow" src={buttonarrow} />
+                  <img
+                    className="buttonarrow"
+                    src={buttonarrow}
+                    alt="Button Arrow"
+                  />
                 </button>
               </div>
             </Link>
@@ -125,7 +120,7 @@ const Home = () => {
                 Transform your business with our expert tech solutions! From
                 strategic planning to seamless implementation, we'll help you
                 harness the power of technology to drive growth, boost
-                efficiency, and stay ahead of the competition
+                efficiency, and stay ahead of the competition.
               </div>
             </div>
           </div>
@@ -134,21 +129,22 @@ const Home = () => {
               <div className="innercard">
                 <div className="leftwing">
                   <div className="leftwingimg">
-                    <img className="ngraphic" src={nimg} />
+                    <img className="ngraphic" src={nimg} alt="N Graphic" />
                   </div>
-
                   <div className="brandname">
                     <div className="corporate">Corporate Branding</div>
-
                     <div className="cercarrow">
-                      <img className="circlearrow" src={circlearrow} />
+                      <img
+                        className="circlearrow"
+                        src={circlearrow}
+                        alt="Circle Arrow"
+                      />
                     </div>
                   </div>
                 </div>
-
                 <div className="frenchlang">
                   Quis at diam diam quis in. Condimentum lobortis lacus a ornare
-                  leo ac bibendum lectus. Aliquam elementum mauris{" "}
+                  leo ac bibendum lectus. Aliquam elementum mauris.
                 </div>
               </div>
             </div>
@@ -156,19 +152,26 @@ const Home = () => {
               <div className="innercard">
                 <div className="leftwing">
                   <div className="leftwingimg">
-                    <img className="ngraphic" src={circleangle} />
+                    <img
+                      className="ngraphic"
+                      src={circleangle}
+                      alt="Circle Angle"
+                    />
                   </div>
                   <div className="brandname">
                     <div className="graphic">Graphic Design</div>
-
                     <div className="cercarrow">
-                      <img className="circlearrow" src={circlearrow} />
+                      <img
+                        className="circlearrow"
+                        src={circlearrow}
+                        alt="Circle Arrow"
+                      />
                     </div>
                   </div>
                 </div>
                 <div className="frenchlang">
                   Quis at diam diam quis in. Condimentum lobortis lacus a ornare
-                  leo ac bibendum lectus. Aliquam elementum mauris{" "}
+                  leo ac bibendum lectus. Aliquam elementum mauris.
                 </div>
               </div>
             </div>
@@ -176,21 +179,26 @@ const Home = () => {
               <div className="innercard">
                 <div className="leftwing">
                   <div className="leftwingimg">
-                    <img className="ngraphic" src={rectangleimg} />
+                    <img
+                      className="ngraphic"
+                      src={rectangleimg}
+                      alt="Rectangle Image"
+                    />
                   </div>
-
                   <div className="brandname">
                     <div>Web Design & Development</div>
-
                     <div className="cercarrow">
-                      <img className="circlearrow" src={circlearrow} />
+                      <img
+                        className="circlearrow"
+                        src={circlearrow}
+                        alt="Circle Arrow"
+                      />
                     </div>
                   </div>
                 </div>
-
                 <div className="frenchlang">
                   Quis at diam diam quis in. Condimentum lobortis lacus a ornare
-                  leo ac bibendum lectus. Aliquam elementum mauris{" "}
+                  leo ac bibendum lectus. Aliquam elementum mauris.
                 </div>
               </div>
             </div>
@@ -198,20 +206,26 @@ const Home = () => {
               <div className="innercard">
                 <div className="leftwing">
                   <div className="leftwingimg">
-                    <img className="ngraphic" src={phoneimg} />
+                    <img
+                      className="ngraphic"
+                      src={phoneimg}
+                      alt="Phone Image"
+                    />
                   </div>
                   <div className="brandname">
                     <div>Mobile Design & Development</div>
-
                     <div className="cercarrow">
-                      <img className="circlearrow" src={circlearrow} />
+                      <img
+                        className="circlearrow"
+                        src={circlearrow}
+                        alt="Circle Arrow"
+                      />
                     </div>
                   </div>
                 </div>
-
                 <div className="frenchlang">
                   Quis at diam diam quis in. Condimentum lobortis lacus a ornare
-                  leo ac bibendum lectus. Aliquam elementum mauris{" "}
+                  leo ac bibendum lectus. Aliquam elementum mauris.
                 </div>
               </div>
             </div>

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Modal from "./Modal";
+import Modal from "../NavBar/Modal";
 import styleplus from "../../assets/Styleplus.svg";
 import sectionbutton from "../../assets/sectionsbuttonimg.svg";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../hooks/UseAuth";
+
 
 import "./NavBar.css";
 
@@ -35,7 +37,9 @@ const NavButton = styled.button`
   }
 `;
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
+  const { currentUser } = useAuth();
+
   const [isModalOpen, setisModalOpen] = useState(false);
   const handleGetStartedClick = () => {
     setisModalOpen(true);
@@ -48,7 +52,10 @@ const NavBar = () => {
     <>
       <Headerfeature>
         <div className="innerheader">
-          <div className="style">
+          <div className="style flex">
+          <div className="bg-lightblue h-[40px] w-[100px]">
+          {currentUser ? <p>Welcome back, {currentUser.username}!</p> : <p>Please log in.</p>}
+          </div>
             <img className="styleplus" src={styleplus} />
           </div>
 

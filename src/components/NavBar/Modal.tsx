@@ -3,7 +3,6 @@ import styled from "styled-components";
 import cancelbutton from "../../assets/cancelbutton.svg";
 import styleplus from "../../assets/Styleplus.svg";
 import { Link } from "react-router-dom";
-
 import "./Modal.css";
 
 const ModalOverlay = styled.div`
@@ -68,17 +67,21 @@ const DropdownButton = styled.button`
   }
 `;
 
-const Modal = ({ onClose }) => {
+interface ModalProps {
+  onClose: () => void;
+}
+
+const Modal: React.FC<ModalProps> = ({ onClose }) => {
   return (
     <ModalOverlay onClick={onClose}>
       <ModalContent onClick={(e) => e.stopPropagation()}>
         <div className="stylepluscancel">
           <div>
-            <img className="styleplusi" src={styleplus} />
+            <img className="styleplusi" src={styleplus} alt="Styleplus" />
           </div>
           <div>
             <CloseButton onClick={onClose}>
-              <img className="cancelbutton" src={cancelbutton} />
+              <img className="cancelbutton" src={cancelbutton} alt="Close" />
             </CloseButton>
           </div>
         </div>
@@ -92,7 +95,7 @@ const Modal = ({ onClose }) => {
           <Link to="/service">
             <DropdownButton>Service</DropdownButton>
           </Link>
-          <Link to="/suport">
+          <Link to="/support">
             <DropdownButton>Support</DropdownButton>
           </Link>
           <Link to="/">

@@ -1,6 +1,5 @@
 import React from "react";
 import "./About.css";
-
 import yellowbox from "../../assets/yellowimage.svg";
 import column from "../../assets/column.svg";
 import VerticalSlider from "../VerticalSlider";
@@ -29,7 +28,7 @@ const About = () => {
   return (
     <div className="aboutbody">
       <div className="aboutin">
-        <div className="styleabout">About Styleplus</div>
+        <div className="styleabout">About Stackgallery</div>
         <div className="aboutimageslider">
           <div className="aboutinnerimageslider">
             <VerticalSlider />
@@ -47,13 +46,8 @@ const About = () => {
           </div>
 
           <div className="aboutsparkatstyleplus">
-            At Styleplus, we're passionate about harnessing the power of
-            technology to drive innovation and growth. As a leading tech service
-            company, we specialize in providing cutting-edge solutions that help
-            businesses thrive in an ever-evolving digital landscape. With a keen
-            eye for emerging trends and a deep understanding of our clients'
-            needs, we craft tailored solutions that empower companies to stay
-            ahead of the curve, drive efficiency, and achieve their goals.
+            At Stackgallery, we're passionate about harnessing the power of
+            technology to drive innovation and growth. As a leading digital library, we provide cutting edge website that help book lovers to learn and grow their knowledge in whatever area they choose to specialize. With a keen eye for emerging trends and a deep understanding of our clients' needs, we craft tailored solutions that empower individuals to stay ahead of the curve, drive efficiency, and achieve their goals.
           </div>
         </div>
       </div>

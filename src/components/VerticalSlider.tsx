@@ -55,7 +55,7 @@ const VerticalSlider = () => {
           <img className="slideimage" src={sliderpic3} />
         </Slide>
         <Slide>
-          <img sclassName="slideimage" rc={sliderpic3} />
+          <img className="slideimage" src={sliderpic3} />
         </Slide>
         <Slide>
           <img className="slideimage" src={sliderpic4} />
